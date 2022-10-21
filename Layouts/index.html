@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="redirect">
+        <a href="grid.html" class="link flex">Link to Grid Layout</a>
+    </div>
+    <div class="wrapper">
+        <div class="card-slot bg-sedans">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAACdklEQVRoge3Yz4uNURzH8dcgZaEZBsWOLCz8A0KhbERZiSJlo9D8AVazwEL4A+TXKGSpFKNEIWJ5/RhJNiyYNNhYuO61eJ7pnueZ+9z73Of+QD3vOvWcc77nfD7f5zzn3NOlpKSkpKSk5O8xVHDMBqzD8g7HTmMKT1EvoN01B/A2Fu+mvMX+QRqfjys9MJ4uF+O5C7MgZ9wJHAzq07iNL6m4TdgYPz/B41T/CuzCsrh+CJ9xPKePQmxBTeOtnceijNjxIG48I2YRLgRxtVijLyxAJRC7pfXGz5OAeI5bQWxF/q8hwbw2/cewPn7+gSN6c3rUcRjf4vp6HO3BvAlWYEbjLY3lGJN3BWYZC+K/Y2WnJtOfw2JsxlbsFJ31g2RKdDg8xCPRqudimehI+6n3R2XRUsVznMYO0cttyhK8+QcMtyu/8Ex0pK8OEzgTBNXwIm7bieGsrPvAcKx5JvZQlZ1MVbDp3wUduwdouB15Etou1dHuWP2bzCb0QMPvfZIZ/Q8s1/A7MyRpvNmv7FpsE232GVHW7/tkLq9WPV1ptgKjuCl5D6rjN27E/b2iU62E52YJLMFrczdNWF5ipAfmi2i1TeBq0FbDHZzF3VT85R4kUESrZQKrREs3O+GelODeIL4axxelqFbC86dUQ1juZAhPthhTtBTR+jgPExkD4VVGe6XFmKIU0ZqAhTil+UrczRh4r0lst6UTrY84GXufQ/hd1kXfYci+oK+qwB1+EFoTkhlP4py5b+NSF+b7qjUiOntbLXlFb26rfdMaxXXJJa7H9WtY2r337rXy/LW4RnQ/GcVX0f3kQ3d+/wmtkpKSkpKSkq75A8tRwfuNe34FAAAAAElFTkSuQmCC">
+            <h4 class="title">sedans</h4>
+            <p>
+                Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+    
+        <div class="card-slot bg-suvs">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAADAUlEQVRoge3Yy4sdVRAG8N9MdBCMOBPwMbMTceErGzeaf8BFEuNGNyKoCwmJoJBc11lGo6I7A0qMxr3oRhAc8JGJ0YgbJT4ShPhAkKAkmtc4uqjTuaev0z237507k4T+oLh9uk/V/ep0VZ1TTYsWLVq0aHGF4lp0cASn8O8QchKzeBRjK0H+NhwdknSVfIDrRkl+Ct+NiHwhs5gYlQP7sz/6Q7z2tTXzd2Xzd1XMuRUvYiGb+9oy8S1hs/JKbelDpx8HCnR67O8YmOkimMRPmfEDfeo1cQD2ZvP/wQONmVbgQGb4V6zrU6+pA1fjw0znFNY3JVtgPP1uxiPZ/e2i9I0CF/AQfkjjtXgXNw1qcJ1Y8WJF3m6o3/QNFLhDFIlC9yCuafjfYLdyYq2mHMXLonhM9UN+DMdxyyCejxgL+ErsGbP4SOTL/zBv9Ve+H7mAT7FVzyaYT1pNXI9NeAGfq1/YLzBdKF4qDvRiKYeOiJJ8yTrQi0mxk5/X5budy8eBAjt0+c5x+Tlwoy7f02PKxFek2VgGXOQ8XjcrYQ0ew2H8leQzPCUl0TJhPd4UB8r59Lsfdy+lWBdCkyLO6srZwGeYDNuUkzOX86L2V3KucmAcn9SQL+QQrhqC/IPKjc5isiAOnIs68Hc22IONomd9OLt/VmT/dJKd6V7x/PEBya/Bj5mdg7hXfFC4T/ntH0/zSw6M4X3c32N4Hmd0m++doiXM0cHz6fprvDWAA9N4Ol3/jDvxZ/Z8MtmeSeNXxMl5dxqfI/rV79W/wovbdoaZJXSayqsVTu6t0fl4HMdwuwidl/CliLmVRtMSfhLPVClNie8396RxR5xJcjyL59L1t3inIQG4AU+k619Ek9MbQt/oRsDr+F10c+/htzrj25STuCPCZiaRH0USz2GDaDM3iP2meHZMN4n7woQ48S0Vu3OGK6Nb9FdGNw1i/GaRE1WGD4uzybDYqnojO4cnhzE+IY4Nh3A6yZwIseU8StyFN3BCdF8nsE+U1hYtWrRo0eLKxH+4useroVAHlgAAAABJRU5ErkJggg==">
+            <h4 class="title">suvs</h4>
+            <p>
+                Take an SUV for its spacious interior, power and versatility. Perfect for your next family vacation and off-road adventures.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+    
+        <div class="card-slot bg-luxury">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAADAUlEQVRoge3Yy4sdVRAG8N9MdBCMOBPwMbMTceErGzeaf8BFEuNGNyKoCwmJoJBc11lGo6I7A0qMxr3oRhAc8JGJ0YgbJT4ShPhAkKAkmtc4uqjTuaev0z237507k4T+oLh9uk/V/ep0VZ1TTYsWLVq0aHGF4lp0cASn8O8QchKzeBRjK0H+NhwdknSVfIDrRkl+Ct+NiHwhs5gYlQP7sz/6Q7z2tTXzd2Xzd1XMuRUvYiGb+9oy8S1hs/JKbelDpx8HCnR67O8YmOkimMRPmfEDfeo1cQD2ZvP/wQONmVbgQGb4V6zrU6+pA1fjw0znFNY3JVtgPP1uxiPZ/e2i9I0CF/AQfkjjtXgXNw1qcJ1Y8WJF3m6o3/QNFLhDFIlC9yCuafjfYLdyYq2mHMXLonhM9UN+DMdxyyCejxgL+ErsGbP4SOTL/zBv9Ve+H7mAT7FVzyaYT1pNXI9NeAGfq1/YLzBdKF4qDvRiKYeOiJJ8yTrQi0mxk5/X5budy8eBAjt0+c5x+Tlwoy7f02PKxFek2VgGXOQ8XjcrYQ0ew2H8leQzPCUl0TJhPd4UB8r59Lsfdy+lWBdCkyLO6srZwGeYDNuUkzOX86L2V3KucmAcn9SQL+QQrhqC/IPKjc5isiAOnIs68Hc22IONomd9OLt/VmT/dJKd6V7x/PEBya/Bj5mdg7hXfFC4T/ntH0/zSw6M4X3c32N4Hmd0m++doiXM0cHz6fprvDWAA9N4Ol3/jDvxZ/Z8MtmeSeNXxMl5dxqfI/rV79W/wovbdoaZJXSayqsVTu6t0fl4HMdwuwidl/CliLmVRtMSfhLPVClNie8396RxR5xJcjyL59L1t3inIQG4AU+k619Ek9MbQt/oRsDr+F10c+/htzrj25STuCPCZiaRH0USz2GDaDM3iP2meHZMN4n7woQ48S0Vu3OGK6Nb9FdGNw1i/GaRE1WGD4uzybDYqnojO4cnhzE+IY4Nh3A6yZwIseU8StyFN3BCdF8nsE+U1hYtWrRo0eLKxH+4useroVAHlgAAAABJRU5ErkJggg==">
+            <h4 class="title">luxury</h4>
+            <p>
+                Cruise in the best car brands without the bloated prices. Enjoy the enchanced comfort or a luxury rental and arrive in style.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+</body>
+</html>

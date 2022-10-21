@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --yellow: #fccf07;
+    --purple: #2b1933;
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #ccc;
+}
+.bx{
+    font-size: 1.7rem;
+    color: var(--yellow);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    background-color: var(--purple);
+}
+section{
+    width: 100%;
+    height: 100vh;
+    padding-top: 5rem;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem .5rem;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    border-bottom: .1rem solid #fff;
+}
+nav .logo a{
+    background: var(--yellow);
+    padding: .1rem .7rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: var(--black);
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    gap: 3rem;
+    margin-right: 3rem;
+}
+nav ul li a{
+    color: var(--yellow);
+    font-size: 1.1rem;
+    padding: .3rem .6rem;
+    border-radius: .5rem;
+    transition: 0.3s ease;
+}
+nav ul li a:hover{
+    background: var(--yellow);
+    color: var(--purple);
+}
+nav ul li .contact{
+    background: var(--yellow);
+    color: var(--purple);
+}
+nav .bx-menu{
+    color: #fff;
+    font-size: 1.7rem;
+    display: none;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home .imgr img{
+    width: 8rem;
+    border-radius: 50%;
+}
+.home span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+}
+.home span h3{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.home span p{
+    font-size: 14px;
+    color: #fff;
+}
+.home .socials{
+    display: flex;
+    gap: 1.7rem;
+    margin-top: 1rem;
+}
+.home button{
+    margin-top: 1rem;
+    padding: .6rem 1.6rem;
+    border-radius: 1rem;
+    border: none;
+    background: var(--yellow);
+    cursor: pointer;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.about .heading{
+    font-size: 3rem;
+    color: var(--yellow);
+}
+.about .details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30rem;
+    border: 1px solid;
+    padding: 1rem;
+    background: var(--white);
+    border-radius: 1rem;
+}
+.about .details button{
+    width: 30%;
+    height: 2.7rem;
+    background: var(--yellow);
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.about .details .skills .progress{
+    padding: .5rem 0;
+}
+.about .details .skills .progress h4{
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 0;
+    font-size: 1rem;
+}
+.about .details .skills .progress .bar{
+    width: 100%;
+    background-color: var(--grey);
+    overflow:hidden;
+    height: .6rem;
+    border-radius: 50rem;
+    margin: 0;
+}
+.about .details .skills .progress .bar span{
+    display: block;
+    height: 100%;
+    background: var(--purple);
+    border-radius: 50rem;
+}
+.about .details .skills .progress:nth-child(1) .bar span{
+    width: 81%;
+}
+.about .details .skills .progress:nth-child(2) .bar span{
+    width: 72%;
+}
+.about .details .skills .progress:nth-child(3) .bar span{
+    width: 21%;
+}
+.services{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.services .heading{
+    font-size: 3rem;
+    color: var(--yellow);
+    margin-bottom: 3rem;
+}
+.services .cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.services .cards .card{
+    text-align: center;
+    background: var(--yellow);
+    width: 25%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.services .cards .card h2{
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.services .cards .card p{
+    margin-bottom: 1rem;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projects .heading{
+    font-size: 3rem;
+    color: var(--yellow);
+    margin-bottom: 6rem;
+}
+.projects .works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.projects .works img{
+    width: 20%;
+}
+.projects button{
+    width: 10%;
+    height: 2.7rem;
+    margin-top: 3rem;
+    background: var(--yellow);
+    border: none;
+    cursor: pointer;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contact .heading{
+    font-size: 3.5rem;
+    color: var(--yellow);
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.contact form input,textarea{
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+}
+.contact form .multi input{
+    margin-right: .7rem;
+    width: 47.5%;
+}
+.contact form button{
+    width: 30%;
+    height: 2.7rem;
+    background: var(--yellow);
+    border: none;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background: var(--black);
+    width: 100%;
+    height: 10%;
+    color: var(--white);
+}
+footer .socials{
+    display: flex;
+    gap: 1rem;
+}
+@media only screen and (max-width: 480px){
+    html{
+        font-size: 65%;
+    }
+    body{
+        padding: 0;
+    }
+    nav{
+        width: 100%;
+        height: 4rem;
+    }
+    nav ul{
+        display: grid;
+        position: absolute;
+        top: 3%;
+        left: 0%;
+        margin-top: 3.9rem;
+        background: var(--yellow);
+        width: 100%;
+    }
+    nav .navbar.hide{
+        display: none;
+    }
+    nav ul li{
+        text-align: center;
+        line-height: 2px;
+    }
+    nav ul li a{
+        font-size: 1rem;
+        color: #000;
+        padding: .5rem 2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    nav .bx-menu{
+        display: block;
+    }
+    section{
+        display: initial;
+        flex-direction: column;
+    }
+    section .heading{
+        font-size: 3rem;
+    }
+    .services .cards .card h2{
+        font-size: 1rem;
+    }
+    .contact form .multi input{
+        width: 100%;
+    }
+    .contact form{
+        width: 80%;
+    }
+}

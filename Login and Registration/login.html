@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <form method="post" action="success_page.html" class="container">
+        <header>
+            <small>Welcome back!</small>
+            <h2>Login</h2>
+            <a href="registration.html" class="rg-btn">Sign up <i class='bx bx-right-arrow-alt'></i></a>
+        </header>
+        <div class="field">
+            <i class='bx bx-envelope'></i>
+            <input type="email" id="email" placeholder="Email address" required>
+        </div>
+        <div class="field">
+            <i class='bx bx-lock'></i>
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <span>
+            <div class="remember">
+                <input type="checkbox" class="check" checked> Remember me
+            </div>
+            <a href="#" class="fg-pass">Forgot password?</a>
+        </span>
+        <button type="submit" id="submit" class="lg-btn">
+            <a href="success_page.html">Login</a>
+        </button>
+        <p>or continue with</p>
+        <div class="socials">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-google'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </form>
+</body>
+</html>

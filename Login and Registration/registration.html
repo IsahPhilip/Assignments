@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <form method="post" action="#" class="container">
+        <header>
+            <small>Need an account?</small>
+            <h2>Sign up!</h2>
+            <a href="login.html" class="rg-btn">Login <i class='bx bx-right-arrow-alt'></i></a>
+        </header>
+        <div class="names">
+            <div class="field">
+                <i class='bx bx-user'></i>
+                <input type="text" placeholder="First name" required>
+            </div>
+            <div class="field">
+                <i class='bx bx-user'></i>
+                <input type="text" placeholder="Last name" required>
+            </div>
+        </div>
+        <div class="names">
+            <div class="field">
+                <i class='bx bx-phone'></i>
+                <input type="tel" placeholder="Phone number" required>
+            </div>
+            <div class="field">
+                <i class='bx bx-envelope'></i>
+                <input type="email" placeholder="Email address" required>
+            </div>
+        </div>
+        <div class="names">
+            <div class="field">
+                <i class='bx bx-male-female'></i>
+                <select required>
+                    <option value="male">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="field">
+                <i class='bx bx-calendar'></i>
+                <input type="date" required>
+            </div>
+        </div>
+       
+        <div class="field">
+            <i class='bx bx-palette'></i>
+            <input type="color">
+        </div>
+        <button type="submit" class="lg-btn">Sign up</button>
+        <p>By continuing, you agree to <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>, and to receiving emails with updates.</p>
+    </form>
+    
+</body>
+</html>
